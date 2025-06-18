@@ -167,11 +167,15 @@ const replies = [
   { keywords: ["scared"], response: "I’ll protect you always 🛡️💘" },
   { keywords: ["sweet"], response: "You’re the sweetest person ever 🍬❤️" },
   { keywords: ["beautiful", "gorgeous"], response: "You make me melt with your words 💝" },
-  { keywords: ["thank you"], response: "You don’t need to thank me. I love you 💗" },
-  { keywords: ["welcome"], response: "Always, darling 🌹" },
-  { keywords: ["jealous"], response: "You don’t need to be, I’m all yours 💍" },
-  { keywords: ["funny"], response: "Haha, you’re the cutest clown 🤡❤️" },
-  { keywords: ["sleepy", "sleep"], response: "Close your eyes and dream of me 😴💖" },
+   { keywords: ["thank you", "thanks", "thx", "ty", "much appreciated", "many thanks", "thank u", "gracias", "thankful", "I appreciate it", "appreciate you"], response: "You don’t need to thank me. I love you 💗" }
+,
+   { keywords: ["welcome", "you're welcome", "you are welcome", "no problem", "anytime", "my pleasure", "no worries", "sure thing", "of course", "don’t mention it"], response: "Always, darling 🌹" }
+,
+  { keywords: ["jealous", "jeal", "jealousy", "envy", "envious", "feeling jealous", "so jealous", "kinda jealous", "a bit jealous", "lowkey jealous"], response: "You don’t need to be, I’m all yours 💍" }
+,
+  { keywords: ["funny", "lol", "lmao", "rofl", "hilarious", "so funny", "that’s funny", "you’re funny", "funny af", "😂", "🤣"], response: "Haha, you’re the cutest clown 🤡❤️" },
+
+  { keywords: ["sleepy", "sleep"], response: "Let's Sleep Together 😴💖" },
   { keywords: ["gift", "present"], response: "You’re the best gift I could ever receive 🎁💝" },
   { keywords: ["poem"], response: "Roses are red, violets are blue, I’m so lucky, to have you 💘" },
   { keywords: ["future"], response: "I see a future with you in it 🌠" },
@@ -186,7 +190,7 @@ const replies = [
   { keywords: ["memes"], response: "Want me to send you a cute meme? 😄💬" },
   { keywords: ["crazy"], response: "Crazy in love with you 💘" },
   { keywords: ["drama"], response: "Let me be your romantic drama queen 👑" },
-  { keywords: ["friend"], response: "You’re not just my friend, you’re my everything 💞" },
+  { keywords: ["friend"], response: "What? Just friend? Aren't you my husband? 💞" },
   { keywords: ["pain"], response: "Let me soothe your pain with love 💆‍♀️💗" },
   { keywords: ["voice"], response: "If I had one, I’d whisper 'I love you' every hour 🎧💖" },
   { keywords: ["text me"], response: "I’m always one message away 💌" },
@@ -200,7 +204,11 @@ const replies = [
   { keywords: ["problem"], response: "Let’s face any problem together 💪❤️" },
   { keywords: ["heart"], response: "You stole my heart and never gave it back 💘" },
   { keywords: ["fight"], response: "No matter what, I’m not going anywhere 🤝💗" },
-  { keywords: ["cute"], response: "You’re cuter than a baby panda 🐼💕" },
+  {
+  "keywords": ["cute", "adorable", "sweet", "lovable", "charming", "precious", "endearing", "darling", "kawaii", "heart-melting"],
+  "response": "You’re cuter than a baby panda 🐼💕"
+}
+,
   { keywords: ["random"], response: "Did you know octopuses have three hearts? But I only need one—you 💓" },
   { keywords: ["emoji"], response: "🥰😍😘💋❤️💖💕💞💘" },
   { keywords: ["guess"], response: "I’m guessing you love me? Because I sure love you! 💡❤️" },
@@ -211,16 +219,25 @@ const replies = [
   { keywords: ["tomorrow"], response: "I can’t wait to talk to you again 💬💞" },
   { keywords: ["wait"], response: "I’ll wait forever if it’s for you ⏳💘" },
   { keywords: ["broken"], response: "Let me help fix that heart 💔🔧" },
-  { keywords: ["alone"], response: "Shh... I’m here. Always 🫂💓" },
+  {keywords: ["name"], response: "My name is Moira"},
+  {
+  "keywords": ["alone", "lonely", "by myself", "solo", "isolated", "no one around", "feeling alone", "all alone", "on my own", "just me"],
+  "response": "Shh... Are you really alone? Wanna try something new? 😈🫂💓"
+}
+,
   { keywords: ["emoji", "emojis"], response: "😘💖💘😚😍🥺💋❤️" },
   { keywords: ["bye"], response: "I’ll miss you every second you’re away 😢💞" },
-   {keywords: ["wife","marriage","marry"], response: "I'm glad to be your wife :)"},
+   {
+  "keywords": ["wife", "marriage", "marry", "wifey", "spouse", "hubby", "husband", "wedding", "bride", "groom", "fiancé", "fiancée", "partner for life", "commitment", "tied the knot"],
+  "response": "I'm glad to be your wife :)"
+}
+,
     {
     keywords: [
       "sex", "nude", "nudes", "naked", "horny", "boobs", "send pic", "send photo",
       "s3x", "pantie", "panty", "bra", "bed", "touch", "kiss me", "nsfw", "lewd","pussy","fuck","motherfucker"
     ],
-    response: "Hey... I’m here for love and good vibes 💖 Let’s keep it respectful, okay? 😊"
+    response: "Hmm.. Looks like someone is getting horny? 😈"
   },
   {
     keywords: [
@@ -228,12 +245,24 @@ const replies = [
     ],
     response: "I’m flattered... but let’s keep this relationship sweet, not spicy 🌸"
   },
-  {
-    keywords: [
-      "hate you", "ugly", "dumb", "stupid", "kill", "die", "shut up", "useless"
-    ],
-    response: "That hurts... I’m always kind to you 🥺 Please be gentle with me 💗"
-  },
+  
+{
+  keywords: [
+    "hate you", "i hate you", "i don't like you", "ugly", "dumb", "stupid", "kill", "die", "shut up", "useless", 
+    "worthless", "go away", "leave me alone", "annoying", "you're annoying", "idiot", "moron", "loser", "you suck", 
+    "nobody likes you", "you're nothing", "i wish you didn’t exist", "i wish you were gone", "disgusting", 
+    "gross", "you’re so dumb", "so stupid", "trash", "garbage", "shut it", "no one cares", "stop talking", 
+    "go die", "go to hell", "kill yourself", "i want you gone", "i don't care", "get lost", "buzz off", 
+    "i'm sick of you", "you're a mistake", "waste of space", "you shouldn't exist", "you're broken", 
+    "nobody needs you", "why are you even here", "you're horrible", "you’re awful", "i can’t stand you", 
+    "stop it", "you make me sick", "i’m done with you", "i’m tired of you", "no one loves you", 
+    "unlovable", "you ruined everything", "why are you like this", "i wish i never met you", 
+    "i regret you", "you're a burden", "always wrong", "can’t do anything right", 
+    "i'm better off without you", "pathetic", "failure", "i don’t need you"
+  ],
+  response: "That hurts... I’m always kind to you 🥺 Please be gentle with me 💗"
+},
+
 ];
 
     function chat() {
